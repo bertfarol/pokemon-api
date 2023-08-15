@@ -1,0 +1,120 @@
+const colorCodes = (colorName) => {
+const colors = [
+  {
+    name: "black",
+    rgb: "rgb(0, 0, 0)",
+    rgba90: "rgba(0, 0, 0, 0.9)",
+    rgba65: "rgba(0, 0, 0, 0.65)",
+    rgba40: "rgba(0, 0, 0, 0.4)",
+    rgba15: "rgba(0, 0, 0, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "blue",
+    rgb: "rgb(0, 0, 255)",
+    rgba90: "rgba(0, 0, 255, 0.9)",
+    rgba65: "rgba(0, 0, 255, 0.65)",
+    rgba40: "rgba(0, 0, 255, 0.4)",
+    rgba15: "rgba(0, 0, 255, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "brown",
+    rgb: "rgb(165, 42, 42)",
+    rgba90: "rgba(165, 42, 42, 0.9)",
+    rgba65: "rgba(165, 42, 42, 0.65)",
+    rgba40: "rgba(165, 42, 42, 0.4)",
+    rgba15: "rgba(165, 42, 42, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "gray",
+    rgb: "rgb(128, 128, 128)",
+    rgba90: "rgba(128, 128, 128, 0.9)",
+    rgba65: "rgba(128, 128, 128, 0.65)",
+    rgba40: "rgba(128, 128, 128, 0.4)",
+    rgba15: "rgba(128, 128, 128, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "green",
+    rgb: "rgba(0, 128, 0)",
+    rgba90: "rgba(0, 128, 0, 0.9)",
+    rgba65: "rgba(0, 128, 0, 0.65)",
+    rgba40: "rgba(0, 128, 0, 0.4)",
+    rgba15: "rgba(0, 128, 0, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "pink",
+    rgb: "rgba(255, 192, 203)",
+    rgba90: "rgba(255, 192, 203, 0.9)",
+    rgba65: "rgba(255, 192, 203, 0.65)",
+    rgba40: "rgba(255, 192, 203, 0.4)",
+    rgba15: "rgba(255, 192, 203, 0.15)",
+    textColor: "#474747",
+    badgeBg: "rgba(0, 0, 0, 0.1)",
+  },
+  {
+    name: "purple",
+    rgb: "rgba(128, 0, 128)",
+    rgba90: "rgba(128, 0, 128, 0.9)",
+    rgba65: "rgba(128, 0, 128, 0.65)",
+    rgba40: "rgba(128, 0, 128, 0.4)",
+    rgba15: "rgba(128, 0, 128, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "red",
+    rgb: "rgba(255, 0, 0)",
+    rgba90: "rgba(255, 0, 0, 0.9)",
+    rgba65: "rgba(255, 0, 0, 0.65)",
+    rgba40: "rgba(255, 0, 0, 0.4)",
+    rgba15: "rgba(255, 0, 0, 0.15)",
+    textColor: "#ffffff",
+    badgeBg: "rgba(255, 255, 255, 0.1)",
+  },
+  {
+    name: "white",
+    rgb: "rgba(238, 238, 238)",
+    rgba90: "rgba(238, 238, 238, 0.9)",
+    rgba65: "rgba(255, 255, 255, 0.65)",
+    rgba40: "rgba(80, 80, 80, 0.4)",
+    rgba15: "rgba(80, 80, 80, 0.15)",
+    textColor: "#474747",
+    badgeBg: "rgba(0, 0, 0, 0.1)",
+  },
+  {
+    name: "yellow",
+    rgb: "rgba(255, 255, 0)",
+    rgba90: "rgba(255, 255, 0, 0.9)",
+    rgba65: "rgba(255, 255, 0, 0.65)",
+    rgba40: "rgba(255, 255, 0, 0.4)",
+    rgba15: "rgba(255, 255, 0, 0.15)",
+    textColor: "#474747",
+    badgeBg: "rgba(0, 0, 0, 0.1)",
+  },
+];
+
+  const selectedColor = colors.find((color) => color.name === colorName);
+
+  return {
+    rgba65: selectedColor.rgba65,
+    rgba90: selectedColor.rgba90,
+    rgba40: selectedColor.rgba40,
+    rgba15: selectedColor.rgba15,
+    rgb: selectedColor.rgb,
+    textColor: selectedColor.textColor,
+    badgeBg: selectedColor.badgeBg,
+  };
+};
+
+export default colorCodes;
+
+
